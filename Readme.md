@@ -1,4 +1,20 @@
-![verdaccio logo](images/verdaccio.png)
+<h1 align="center">Verdaccio Municipalidad SMA</h1>
+
+<h4 align="center">Un registro de proxy privado ligero de Node.js</h4>
+
+<br/>
+
+<p align="center">
+  <a href="https://verdaccio.org/">
+    <img alt="Gitea" src="images/verdaccio.png" width="220"/>
+  </a>
+</p>
+
+<br/><br/>
+
+<p align="center">
+  <a href="http://staging.smandes.gov.ar/gitea/Documentacion/verdaccio/wiki">Lea más acerca de su implementación</a>
+</p>
 
 ---
 
