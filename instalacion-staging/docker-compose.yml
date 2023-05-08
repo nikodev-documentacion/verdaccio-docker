@@ -1,0 +1,19 @@
+version: "3"
+services:
+  verdaccio:
+    image: verdaccio/verdaccio:5
+    container_name: verdaccio-container
+    restart: always
+    environment:
+      NODE_ENV: production
+      DATABASE_TYPE: postgres
+      DATABASE_USERNAME: verdaccio
+      DATABASE_PASSWORD: verdaccio
+      DATABASE_NAME: verdacciodb
+      DATABASE_HOST: staging.smandes.gov.ar:5432
+      VERDACCIO_PUBLIC_URL: http://staging.smandes.gov.ar
+    ports:
+      - "4873:4873"
+    volumes:
+      - ./verdaccio-storage:/verdaccio/storage
+      - ./config.yaml:/verdaccio/conf/config.yaml

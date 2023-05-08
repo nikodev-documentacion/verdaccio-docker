@@ -27,4 +27,4 @@ services:
       - "4873:4873"
     volumes:
       - ./verdaccio/storage:/verdaccio/storage
-      - ./verdaccio/conf:/verdaccio/conf
+      # - ./verdaccio/conf:/verdaccio/conf
