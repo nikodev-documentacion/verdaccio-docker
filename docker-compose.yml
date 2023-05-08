@@ -1,0 +1,30 @@
+version: "3"
+services:
+  psqldb:
+    image: postgres:14
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: verdaccio
+      POSTGRES_DB: verdacciodb
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data
+
+  verdaccio:
+    image: verdaccio/verdaccio:5
+    container_name: verdaccio-container
+    restart: always
+    environment:
+      NODE_ENV: production
+      DATABASE_TYPE: postgres
+      DATABASE_USERNAME: verdaccio
+      DATABASE_PASSWORD: verdaccio
+      DATABASE_NAME: verdacciodb
+      DATABASE_HOST: psqldb
+    depends_on:
+      - psqldb
+    ports:
+      - "4873:4873"
+    volumes:
+      - ./verdaccio/storage:/verdaccio/storage
+      - ./verdaccio/conf:/verdaccio/conf
