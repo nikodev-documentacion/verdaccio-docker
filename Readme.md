@@ -1,4 +1,4 @@
-<h1 align="center">Verdaccio Municipalidad SMA</h1>
+<h1 align="center">Verdaccio test</h1>
 
 <h4 align="center">Un registro de proxy privado ligero de Node.js</h4>
 
