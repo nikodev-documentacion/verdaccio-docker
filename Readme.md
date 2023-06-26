@@ -13,7 +13,7 @@
 <br/><br/>
 
 <p align="center">
-  <a href="[http://staging.smandes.gov.ar/gitea/Documentacion/verdaccio/wiki](https://github.com/nikodev-documentacion/verdaccio-docker/wiki)">Lea más acerca de su implementación</a>
+  <a href="https://github.com/nikodev-documentacion/verdaccio-docker/wiki">Lea más acerca de su implementación</a>
 </p>
 
 ---
