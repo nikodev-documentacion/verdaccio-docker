@@ -10,8 +10,8 @@ services:
       DATABASE_USERNAME: verdaccio
       DATABASE_PASSWORD: verdaccio
       DATABASE_NAME: verdacciodb
-      DATABASE_HOST: staging.smandes.gov.ar:5432
-      VERDACCIO_PUBLIC_URL: http://staging.smandes.gov.ar
+      DATABASE_HOST: staging.domain.com:5432
+      VERDACCIO_PUBLIC_URL: http://staging.domain.com
     ports:
       - "4873:4873"
     volumes:
